@@ -2522,3 +2522,39 @@ body {
 .section-tag {
   display: none;
 }
+
+
+/* --- KODE AGAR FIT & RESPONSIF DI HP --- */
+
+/* 1. Mengatur ukuran modal agar tidak melebihi layar HP */
+.modal-content {
+  width: 90%;           /* Lebar modal 90% dari layar HP */
+  max-width: 600px;     /* Batas maksimal di laptop/desktop */
+  max-height: 85vh;     /* Batas tinggi modal agar tidak terpotong */
+  overflow-y: auto;     /* Bisa di-scroll ke bawah jika kontennya panjang */
+  margin: 10% auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* 2. Mengatur gambar di dalam modal slider agar pas di HP */
+.modal-slider img {
+  width: 100%;          /* Lebar gambar mengikuti kotak modal */
+  height: auto;         /* Tinggi menyesuaikan otomatis secara proporsional */
+  object-fit: contain;  /* Mencegah gambar agar tidak gepeng atau terpotong */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 3. Penyesuaian khusus untuk layar HP (di bawah ukuran 768px) */
+@media screen and (max-width: 768px) {
+  /* Perkecil sedikit padding atau ukuran font jika diperlukan */
+  body {
+    font-size: 14px;
+  }
+  
+  .modal-content {
+    width: 95%;         /* Lebih lebar sedikit di HP kecil */
+    padding: 10px;
+  }
+}
