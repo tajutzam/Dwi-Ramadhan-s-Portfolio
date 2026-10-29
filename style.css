@@ -2558,3 +2558,49 @@ body {
     padding: 10px;
   }
 }
+
+
+/* ==========================================
+   PERBAIKAN TAMPILAN HP (MOBILE RESPONSIVE)
+   ========================================== */
+
+@media screen and (max-width: 900px) {
+  /* 1. Memunculkan kembali menu navigasi (About, Contact, dll) di HP */
+  .nav-links {
+    display: flex !important;       /* Memunculkan menu */
+    gap: 12px;                      /* Jarak antar menu */
+    font-size: 12px;                /* Ukuran teks disesuaikan */
+    flex-wrap: wrap;               /* Agar jika tidak muat, turun ke bawah */
+    justify-content: center;
+  }
+  
+  .nav-inner {
+    flex-direction: column;         /* Menata logo dan menu secara vertikal */
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* 2. Memberi ruang/jarak (padding) agar tidak mepet di layar HP */
+  .container {
+    padding: 0 18px !important;    /* Jarak kiri & kanan tepi HP */
+  }
+
+  section {
+    padding: 50px 0 !important;    /* Jarak atas & bawah antarseksi */
+  }
+
+  /* Jarak untuk judul dan teks */
+  .section-head {
+    margin-bottom: 32px !important;
+  }
+
+  .hero {
+    padding-top: 100px !important; /* Agar teks hero tidak tertutup navbar */
+  }
+
+  /* Merapikan kartu agar tidak sesak */
+  .stat, .service, .work-card, .testi, .contact-box {
+    padding: 20px 16px !important;
+  }
+}
