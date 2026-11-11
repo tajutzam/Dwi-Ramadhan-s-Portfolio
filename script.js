@@ -127,12 +127,3 @@ researchItems.forEach((item, index) => {
 
   researchObserver.observe(item);
 });
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-#contact {
-  scroll-margin-top: 100px;
-}
