@@ -2798,3 +2798,47 @@ body {
     text-align: center;
   }
 }
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  flex-shrink: 0;
+}
+
+.logo-r {
+  color: #d4a64a;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  margin-left: 12px;
+}
+
+.logo-text strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.logo-text > span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.logo-dot {
+  color: #d4a64a;
+  font-weight: 800;
+}
